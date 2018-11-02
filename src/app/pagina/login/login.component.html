@@ -1,89 +1,87 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <!-- <div class="card">
-        <div class="card-body">
-  
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+
+    <div class="contenedor-formularios">
+      <!-- Links de los formularios -->
+      <ul class="contenedor-tabs">
+        <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+        <li class="tab tab-primera"><a href="#registrarse">Registrarse</a></li>
+      </ul>
+
+      <!-- Contenido de los Formularios -->
+      <div class="contenido-tab">
+        <!-- Iniciar Sesion -->
+        <div id="iniciar-sesion">
+          <h1 class="h1-title">Iniciar Sesión</h1>
+          <form action="#" method="post">
+            <div class="contenedor-input">
+              <label>
+                Usuario <span class="req">*</span>
+              </label>
+              <input type="text" required>
+            </div>
+
+            <div class="contenedor-input">
+              <label>
+                Contraseña <span class="req">*</span>
+              </label>
+              <input type="password" required>
+            </div>
+            <input type="submit" class="button button-block" value="Iniciar Sesión">
+            <h5 class="h5-subtitle">ó</h5>
+            <div class="contenedor-apis">
+                <input type="submit" ng-click="onGoogleLogin()" class="button button-block" value="Gmail" style="background: #dd5347;">
+                <h4>{{gmail.username}}</h4>
+                <br>
+                <input type="submit" class="button button-block" value="Facebook" style="background: #3b5998;">
+            </div>
+          </form>
         </div>
-      </div> -->
-    </div>
-    <div class="col-md-6">
 
-      <div class="contenedor-formularios">
-        <!-- Links de los formularios -->
-        <ul class="contenedor-tabs">
-          <li class="tab tab-segunda active"><a href="#iniciar-sesion">Iniciar Sesión</a></li>
-          <li class="tab tab-primera"><a href="#registrarse">Registrarse</a></li>
-        </ul>
-
-        <!-- Contenido de los Formularios -->
-        <div class="contenido-tab">
-          <!-- Iniciar Sesion -->
-          <div id="iniciar-sesion">
-            <h1>Iniciar Sesión</h1>
-            <form action="#" method="post">
+        <!-- Registrarse -->
+        <div id="registrarse">
+          <h1 class="h1-title">Registrarse</h1>
+          <form action="#" method="post">
+            <div class="fila-arriba">
               <div class="contenedor-input">
                 <label>
-                  Usuario <span class="req">*</span>
+                  Nombre <span class="req">*</span>
                 </label>
                 <input type="text" required>
               </div>
 
               <div class="contenedor-input">
                 <label>
-                  Contraseña <span class="req">*</span>
+                  Apellido <span class="req">*</span>
                 </label>
-                <input type="password" required>
+                <input type="text" required>
               </div>
-              <input type="submit" class="button button-block" value="Iniciar Sesión">
-            </form>
-          </div>
+            </div>
+            <div class="contenedor-input">
+              <label>
+                Email <span class="req">*</span>
+              </label>
+              <input type="email" required>
+            </div>
+            <div class="contenedor-input">
+              <label>
+                Contraseña <span class="req">*</span>
+              </label>
+              <input type="password" required>
+            </div>
 
-          <!-- Registrarse -->
-          <div id="registrarse">
-            <h1>Registrarse</h1>
-            <form action="#" method="post">
-              <div class="fila-arriba">
-                <div class="contenedor-input">
-                  <label>
-                    Nombre <span class="req">*</span>
-                  </label>
-                  <input type="text" required>
-                </div>
+            <div class="contenedor-input">
+              <label>
+                Repetir Contraseña <span class="req">*</span>
+              </label>
+              <input type="password" required>
+            </div>
 
-                <div class="contenedor-input">
-                  <label>
-                    Apellido <span class="req">*</span>
-                  </label>
-                  <input type="text" required>
-                </div>
-              </div>
-              <div class="contenedor-input">
-                <label>
-                  Email <span class="req">*</span>
-                </label>
-                <input type="email" required>
-              </div>
-              <div class="contenedor-input">
-                <label>
-                  Contraseña <span class="req">*</span>
-                </label>
-                <input type="password" required>
-              </div>
-
-              <div class="contenedor-input">
-                <label>
-                  Repetir Contraseña <span class="req">*</span>
-                </label>
-                <input type="password" required>
-              </div>
-
-              <input type="submit" class="button button-block" value="Registrarse">
-            </form>
-          </div>
+            <input type="submit" class="button button-block" value="Registrarse">
+          </form>
         </div>
       </div>
-
     </div>
+
   </div>
 </div>

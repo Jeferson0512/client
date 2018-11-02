@@ -5,12 +5,24 @@
 .navbar-title{
     font-size: x-large;
     font-weight: bold;
+    color: #FFF;
+}
+.btn-user{
+  color: #9E9E9E;
+  background-color: transparent;
+  background-image: none;
+  border-color: #9E9E9E;
+}
+.btn-user:hover{
+  color: #fff;
+  background-color: #9E9E9E;
+  border-color: #9E9E9E;
 }
 header{
     position: fixed;
     width: 100%;
     z-index: 10;
-    background: rgb(233, 137, 137);
+    background:rgb(121, 85, 72);
 }
 .header-container {
     width: 90%;
@@ -37,7 +49,7 @@ header{
   .header-button {
     width: 2rem;
     height: 0.2rem;
-    background: #000;
+    background: #9E9E9E;
     position: absolute;
     top: 1.9rem;  
     transition: all 0.2s;
@@ -47,7 +59,7 @@ header{
     content: "";
     width: 2rem;
     height: 0.2rem;
-    background: #000;
+    background: #9E9E9E;
     position: absolute;
     top: -0.6rem;
     transition: all 0.2s;
@@ -56,7 +68,7 @@ header{
     top: 0.6rem;
   }
   .menu {
-    background: rgba(0, 0, 0, 0.32);
+    background: rgba(215, 204, 200, 0.87);
     width: 100%;
     position: fixed;
     z-index: 9;
@@ -74,15 +86,14 @@ header{
     margin: 2rem;
   }
   li.nav-menu{
-      margin: 0.5rem;
-  }
-  a.item-menu:hover{
-    margin: 0.5rem;
+    margin: 0.5rem 30rem;
     padding: 0.5rem 15rem;
-    background: rgb(233, 137, 137);
+  }
+  li.nav-menu:hover{
+    background: rgba(121, 85, 72, 0.74);
     border-radius: 5rem;
-    transition: all 0.8s;
-    
+    cursor: pointer;
+    transition: all 1.5s;
   }
   a {
     margin: 0 1rem;

@@ -9,9 +9,20 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myController">
+  <script src = "https://smartlock.google.com/client"> </script>
   <app-root></app-root>
+  
   <script src="https://use.fontawesome.com/releases/v5.4.2/js/all.js"></script>
-  <!-- <script src="main.js"></script> -->
+  <script type="text/javascript">
+    (function(){
+      var p = document.createElement('script');
+      p.type = 'text/javascript';
+      p.async = true;
+      p.src = "https://apis.google.com/js/client.js?onload=onLoadFunction";
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(p, s);
+    })();
+  </script>
 </body>
 </html>
