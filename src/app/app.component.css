@@ -1,0 +1,106 @@
+/* Navegacion "navbar" */
+.checkbox{
+    display: none;
+}
+.navbar-title{
+    font-size: x-large;
+    font-weight: bold;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: rgb(233, 137, 137);
+}
+.header-container {
+    width: 90%;
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  .header-logo {
+    width: 3rem;
+    display: flex;
+    margin: 1rem auto;
+  }
+  .btn-label {
+    width: 2rem;
+    height: 1.4rem;
+  }
+  .icon-login{
+    width: 6rem;
+    height: 2rem;      
+  }
+  .header-button {
+    width: 2rem;
+    height: 0.2rem;
+    background: #000;
+    position: absolute;
+    top: 1.9rem;  
+    transition: all 0.2s;
+  }
+  .header-button::before,
+  .header-button::after {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    background: #000;
+    position: absolute;
+    top: -0.6rem;
+    transition: all 0.2s;
+  }
+  .header-button::after {
+    top: 0.6rem;
+  }
+  .menu {
+    background: rgba(0, 0, 0, 0.32);
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    padding: 5rem 0;
+    top: -30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 5rem;
+    transition: all 0.5s;
+  }
+  ul {
+    list-style: none;
+    margin: 2rem;
+  }
+  li.nav-menu{
+      margin: 0.5rem;
+  }
+  a.item-menu:hover{
+    margin: 0.5rem;
+    padding: 0.5rem 15rem;
+    background: rgb(233, 137, 137);
+    border-radius: 5rem;
+    transition: all 0.8s;
+    
+  }
+  a {
+    margin: 0 1rem;
+    color: #000;
+    text-decoration: none;
+  }
+  .checkbox:checked ~ .menu {
+    top: 0rem;
+  }
+  .checkbox:checked + header .header-container label .header-button {
+    background: none;
+  }
+  .checkbox:checked + header .header-container label .header-button::before {
+    transform: rotate(35deg);
+    top: 0;
+  }
+  .checkbox:checked + header .header-container label .header-button::after {
+    transform: rotate(-35deg);
+    top: 0;
+  }
+  /* Fin navegacion */
