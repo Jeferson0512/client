@@ -86,8 +86,8 @@ header{
     margin: 2rem;
   }
   li.nav-menu{
-    margin: 0.5rem 30rem;
-    padding: 0.5rem 15rem;
+    margin: 0.5% 20%;
+    padding: 0.5% 15%;
   }
   li.nav-menu:hover{
     background: rgba(121, 85, 72, 0.74);
@@ -115,3 +115,6 @@ header{
     top: 0;
   }
   /* Fin navegacion */
+
+
+  /* ====================== */

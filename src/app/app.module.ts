@@ -18,6 +18,8 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './componentes/users/users.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { LoginComponent } from './pagina/login/login.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { LoginHomeComponent } from './pagina/login/login-home.component';
 
 // export function getAuthServiceConfigs() {
 //   let config = new AuthServiceConfig(
@@ -40,12 +42,14 @@ import { LoginComponent } from './pagina/login/login.component';
     AppComponent,
     UsersComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    LoginHomeComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
+    AppRoutingModule,
     // SocialLoginModule
     // FontAwesomeModule
   ],

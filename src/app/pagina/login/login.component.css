@@ -1,7 +1,9 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
+.row{
+  margin: 0px;
+}
 body {
   background: #c1bdba;
   font-family: "Ubuntu", helvetica;
